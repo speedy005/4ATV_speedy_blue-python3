@@ -1,0 +1,14 @@
+<skin>
+<!-- Menu_down_animation FHD -->
+<screen name="Iconmain" flags="wfNoBorder">
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/menu/menue_vertical_unten.png" position="0,760" size="1920,325" zPosition="-1" />
+  <widget name="title" position="20,782" size="1880,100" zPosition="3" halign="left" valign="center" font="NotoSans-Bold;60" backgroundColor="transparent" transparent="1" foregroundColor="mediumblue" borderWidth="2" borderColor="white" />
+  <widget source="label1" render="Label" position="20,907" size="360,150" font="NotoSans-Bold;30" halign="center" valign="center" zPosition="2" foregroundColor="mediumblue" backgroundColor="back_color" transparent="1" />
+  <widget source="label2" render="Label" position="395,907" size="360,150" font="NotoSans-Bold;30" halign="center" valign="center" zPosition="2" foregroundColor="mediumblue" backgroundColor="back_color" transparent="1" />
+  <widget source="label3" render="Label" position="780,907" size="360,150" font="NotoSans-Bold;36" halign="center" valign="center" zPosition="2" foregroundColor="white" backgroundColor="red" transparent="0" />
+  <widget source="label4" render="Label" position="1160,907" size="360,150" font="NotoSans-Bold;30" halign="center" valign="center" zPosition="2" foregroundColor="mediumblue" backgroundColor="back_color" transparent="1" />
+  <widget source="label5" render="Label" position="1540,907" size="360,150" font="NotoSans-Bold;30" halign="center" valign="center" zPosition="2" foregroundColor="mediumblue" backgroundColor="back_color" transparent="1" />
+</screen>
+ </skin>
+ 
+

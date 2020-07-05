@@ -1,0 +1,10 @@
+<skin>
+<!--skin_Volumechris-->
+<screen backgroundColor="black" flags="wfNoBorder" name="Volume" position="510,25" size="900,70" title="Volume" zPosition="4">
+<widget backgroundColor="black" font="Regular;28" halign="center" position="817,11" render="speedyVolumeText" size="60,42" source="global.CurrentTime" zPosition="6" transparent="1" />
+<ePixmap pixmap="4ATV_speedy_blue/volume/volume_6.png" position="0,0" size="900,70" alphatest="blend" zPosition="0" />
+<widget name="Volume" pixmap="4ATV_speedy_blue/progressvol/progressvol_680.png" position="94,23" size="682,24" transparent="0" zPosition="6" />
+</screen>
+</skin>
+  
+  

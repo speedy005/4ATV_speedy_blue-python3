@@ -1,0 +1,96 @@
+<skin>
+<!-- Channel selection 3 Fields FHD -->
+<screen name="ChannelSelection" position="0,0" title="Channel Selection" backgroundColor="transparent" flags="wfNoBorder" size="1920,1080">
+  <widget source="Title" render="Label" position="104,1" size="730,100" font="NotoSans-Bold; 40" halign="center" valign="top" backgroundColor="black" transparent="1" zPosition="1" foregroundColor="orange" />
+  <ePixmap name="back" position="0,-1" size="1920,1080" pixmap="4ATV_speedy_blue/menu/back3_1_bild_neu.png" zPosition="-75" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/line648.png" position="800,967" size="570,2" alphatest="blend" zPosition="6" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/line648.png" position="800,729" size="570,4" alphatest="blend" zPosition="6" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/line648.png" position="800,686" size="570,4" alphatest="blend" zPosition="6" />
+  <ePixmap pixmap="4ATV_speedy_blue/icons/arrowup.png" position="18,20" size="40,70" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/buttons/key_menu.png" position="1840,1010" size="60,31" alphatest="on" zPosition="1" />
+  <ePixmap pixmap="4ATV_speedy_blue/buttons/key_info.png" position="1765,1010" size="60,31" alphatest="on" zPosition="1" />
+  <ePixmap pixmap="4ATV_speedy_blue/buttons/key_red.png" position="23,1010" size="35,35" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/buttons/key_green.png" position="325,1010" size="35,35" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/buttons/key_yellow.png" position="629,1010" size="35,35" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/buttons/key_blue.png" position="936,1010" size="35,35" alphatest="blend" />
+  <widget name="key_red" position="67,992" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  <widget name="key_green" position="370,992" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  <widget name="key_yellow" position="675,992" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  <widget name="key_blue" position="983,992" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+  <widget source="global.CurrentTime" render="Label" position="1347,25" size="568,50" font="NotoSans-Bold; 32" halign="left" backgroundColor="black" transparent="1" borderWidth="3" borderColor="orange">
+    <convert type="ClockToText">Format:%A,%d.%m.%Y  %H:%M:%S</convert>
+  </widget>
+  <widget source="session.VideoPicture" render="Pig" position="799,110" size="566,248" zPosition="5" backgroundColor="backgroundPig" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/sat.png" position="1452,975" size="150,95" zPosition="6" transparent="1" alphatest="blend">
+    <convert type="speedyServiceInfoEX">IsSatelliteS</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/picon_dvb-t.png" position="1452,975" size="150,95" zPosition="12" transparent="1" alphatest="blend">
+    <convert type="speedyServiceInfoEX">IsTerrestrial</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/dvb-c1.png" position="1452,975" size="150,95" zPosition="4" transparent="1" alphatest="blend">
+    <convert type="speedyServiceInfoEX">IsCable</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget name="list" position="15,108" size="770,860" scrollbarMode="showOnDemand" transparent="1" zPosition="1" serviceItemHeight="60" serviceNumberFont="Regular;28" serviceNameFont="Regular;32" serviceInfoFont="Regular;32" foregroundColor="white" foregroundColorSelected="white" backgroundColor="black" backgroundColorSelected="orange" colorServiceDescription="orange" colorServiceDescriptionSelected="white" foregroundColorServiceNotAvail="white" colorEventProgressbarBorder="white" colorEventProgressbarBorderSelected="orange" />
+  <eLabel text="Start Time:" position="810,417" size="147,30" font="Regular; 25" halign="left" backgroundColor="black" foregroundColor="green" transparent="1" zPosition="1" />
+  <widget source="ServiceEvent" render="Label" position="957,417" size="80,30" font="Regular; 25" halign="left" backgroundColor="black" transparent="1" zPosition="1">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">
+    </convert>
+  </widget>
+  <eLabel text="End Time:" position="1120,417" size="150,30" font="Regular; 25" backgroundColor="black" transparent="1" zPosition="1" foregroundColor="red" />
+  <widget source="ServiceEvent" render="Label" position="1270,417" size="80,30" font="Regular; 25" backgroundColor="black" transparent="1" zPosition="1">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">
+    </convert>
+  </widget>
+  <widget source="ServiceEvent" render="speedyProgress" position="800,360" pixmap="4ATV_speedy_blue/progress/progress665.png" size="570,8" borderWidth="1" borderColor="foregroundClock" zPosition="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <widget source="ServiceEvent" render="speedyAXBlueRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=2500,wrap=1,always=1,repeat=5,oneshot=1" position="800,455" size="570,230" font="Regular;34" foregroundColor="white" backgroundColor="black" valign="top" halign="center" transparent="1" zPosition="2">
+    <convert type="EventName">FullDescription</convert>
+  </widget>
+  <ePixmap pixmap="4ATV_speedy_blue/menu/line648.png" position="800,355" size="570,2" alphatest="blend" zPosition="6" />
+   <widget source="ServiceEvent" render="Label" position="801,7" size="575,95" font="Regular; 40" halign="center" valign="center" backgroundColor="black" transparent="1" zPosition="1">
+    <convert type="speedyServiceName">Name</convert>
+  </widget>
+  <ePixmap pixmap="4ATV_speedy_blue/menu/line648.png" position="800,449" size="570,4" alphatest="blend" zPosition="6" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/line648.png" position="800,411" size="570,4" alphatest="blend" zPosition="6" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/line648.png" position="800,370" size="570,2" alphatest="blend" zPosition="6" />
+  <ePixmap pixmap="4ATV_speedy_blue/icons/arrowdown.png" position="60,20" size="40,70" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/sat-s2.png" position="1452,975" size="150,95" zPosition="3" transparent="1" alphatest="blend">
+    <convert type="speedyServiceInfoEX">IsSatelliteS2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="4ATV_speedy_blue/menu/pig_bg.png" position="797,110" size="570,242" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/picon_IPTV.png" position="1452,975" size="150,95" zPosition="5" transparent="1" alphatest="blend">
+    <convert type="speedyServiceInfoEX">IsStreamTV</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+<eLabel text="es folgt:" position="800,692" size="180,35" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" zPosition="2" valign="center" foregroundColor="white" />
+<eLabel text="jetzt läuft:" position="800,374" size="180,35" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" zPosition="2" valign="center" />
+<widget source="ServiceEvent" render="speedyEmptyEpg" emptyText="Event data unavailable" position="980,374" size="390,35" font="Regular;27" foregroundColor="white" backgroundColor="black" halign="left" valign="center" transparent="1" zPosition="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+<widget source="ServiceEvent" render="speedyEmptyEpg" emptyText="Event data unavailable" position="995,692" zPosition="1" size="375,35" font="Regular; 27" halign="left" valign="center" backgroundColor="black" transparent="1" foregroundColor="orange">
+    <convert type="speedyServiceNameEventNobile">NextEvent</convert>
+  </widget>
+<widget source="ServiceEvent" render="Label" position="913,693" zPosition="1" size="100,35" font="Regular; 27" halign="left" backgroundColor="black" transparent="1">
+    <convert type="speedyServiceNameEventNobile">StartTime</convert>
+  </widget>
+<widget source="ServiceEvent" render="speedyAXBlueRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=2500,wrap=1,always=1,repeat=5,oneshot=1" position="799,735" size="570,230" font="Regular;32" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="2">
+    <convert type="speedyServiceNameEventNobile">ExtendedDescription</convert>
+  </widget>
+<widget source="ServiceEvent" render="speedySingleEpgListFull" position="1382,108" size="524,820" noWrap="1" font="Regular;26" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="5" />
+<widget source="ServiceEvent" render="speedyAXBlueRunningText" options="movetype=running,direction=left,startpoint=0,scrollamount=60,step=1,steptime=10,startdelay=2500,wrap=1,always=0,repeat=0,oneshot=1" position="1382,935" size="524,32" font="Regular; 32" foregroundColor="white" zPosition="5" noWrap="1" transparent="1" valign="bottom" backgroundColor="black">
+    <convert type="speedyAXBluePrimeTime">PrimeTime,noDuration</convert>
+  </widget>
+<eLabel name="Linie" position="790,105" size="4,865" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
+<eLabel name="Linie2" position="1373,114" size="8,863" foregroundColor="un4e5a74" backgroundColor="un4e5a74" />
+<ePixmap pixmap="4ATV_speedy_blue/menu/line648.png" position="1382,930" size="524,4" alphatest="blend" zPosition="6" />
+</screen>
+ </skin>
+ 
+

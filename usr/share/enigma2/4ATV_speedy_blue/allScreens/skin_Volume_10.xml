@@ -1,0 +1,6 @@
+<skin>
+<!--skin_Volume_10-->
+<screen name="Volume" position="30,412" size="256,256" title="Volume" backgroundColor="transparent" zPosition="4" flags="wfNoBorder">
+<widget source="global.CurrentTime" render="speedyKVolumeCycle" position="0,0" size="256,256" alphatest="blend" transparent="1" zPosition="9" borderWidth="0" borderColor="black" />
+</screen>
+</skin>

@@ -1,0 +1,541 @@
+<skin>
+<!--skin_Infobar_FlipClock_black_VWeather5tage_Info_rechts_flipclock-->
+<screen name="InfoBar" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" borderWidth="0" borderColor="transparent">
+  <ePixmap pixmap="4ATV_speedy_blue/menu/infobar-2_blue_rahmen.png" position="0,761" zPosition="-1" size="1920,320" borderWidth="0" borderColor="black" />
+  <widget source="session.RecordState" render="Pixmap" pixmap="4ATV_speedy_blue/icons/test/ico_rec_on.png" position="1460,768" size="104,51" zPosition="5" alphatest="blend" transparent="1">
+    <convert type="ConditionalShowHide">Blink</convert>
+  </widget>
+  <!--TUNER STATUS A -->
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/icons/icon_a_no.png" size="30,30" position="116,1016" zPosition="1" />
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_a_akt.png" size="30,30" position="116,1016" zPosition="2" alphatest="blend">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">1</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_a.png" size="30,30" position="116,1016" zPosition="3" alphatest="blend">
+    <convert type="speedyFrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">0,0</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!--TUNER STATUS B  -->
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/icons/icon_b_no.png" size="30,30" position="116,1045" zPosition="1" />
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_b_akt.png" size="30,30" position="116,1045" zPosition="2" alphatest="blend">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_b.png" size="30,30" position="116,1045" zPosition="3" alphatest="blend">
+    <convert type="speedyFrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">1,1</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- TUNER STATUS C -->
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/icons/icon_c_no.png" size="30,30" position="151,1016" zPosition="1" />
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_c_akt.png" size="30,30" position="151,1016" zPosition="2" alphatest="blend">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">4</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_c.png" size="30,30" position="151,1016" zPosition="3" alphatest="blend">
+    <convert type="speedyFrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">2,2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- TUNER STATUS D -->
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/icons/icon_d_no.png" size="30,30" position="151,1045" zPosition="1" />
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_d_akt.png" size="30,30" position="151,1045" zPosition="2" alphatest="blend">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">8</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_d.png" size="30,30" position="151,1045" zPosition="3" alphatest="blend">
+    <convert type="speedyFrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">3,3</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- TUNER STATUS E -->
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/icons/icon_e_no.png" size="30,30" position="185,1016" zPosition="1" />
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_e_akt.png" size="30,30" position="185,1016" zPosition="2" alphatest="blend">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">16</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_e.png" size="30,30" position="185,1016" zPosition="3" alphatest="blend">
+    <convert type="speedyFrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">4,4</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- TUNER STATUS F -->
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/icons/icon_f_no.png" size="30,30" position="185,1045" zPosition="1" />
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_f_akt.png" size="30,30" position="185,1045" zPosition="2" alphatest="blend">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">32</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_f.png" size="30,30" position="185,1045" zPosition="3" alphatest="blend">
+    <convert type="speedyFrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">5,5</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- TUNER STATUS G -->
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/icons/icon_g_no.png" size="30,30" position="220,1016" zPosition="1" />
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_g_akt.png" size="30,30" position="220,1016" zPosition="2" alphatest="blend">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">64</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_g.png" size="30,30" position="220,1016" zPosition="3" alphatest="blend">
+    <convert type="speedyFrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">6,6</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- TUNER STATUS H -->
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/icons/icon_h_no.png" size="30,30" position="220,1045" zPosition="1" />
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_h_akt.png" size="30,30" position="220,1045" zPosition="2" alphatest="blend">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">128</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_h.png" size="30,30" position="220,1045" zPosition="3" alphatest="blend">
+    <convert type="speedyFrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">7,7</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <!-- TUNER STATUS I -->
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_i.png" size="30,30" position="255,1016" zPosition="3" alphatest="blend">
+    <convert type="speedyFrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">8,8</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_i_akt.png" size="30,30" position="255,1016" zPosition="2" alphatest="blend">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">256</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/icons/icon_i_no.png" size="30,30" position="255,1016" zPosition="1" />
+  <!-- TUNER STATUS J -->
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_j.png" size="30,30" position="255,1045" zPosition="3" alphatest="blend">
+    <convert type="speedyFrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">9,9</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_j_akt.png" size="30,30" position="255,1045" zPosition="2" alphatest="blend">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">512</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/icons/icon_j_no.png" size="30,30" position="255,1045" zPosition="1" />
+  <!-- TUNER STATUS K -->
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_k.png" size="30,30" position="290,1016" zPosition="3" alphatest="blend">
+    <convert type="speedyFrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">10,10</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_k_akt.png" size="30,30" position="290,1016" zPosition="2" alphatest="blend">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">1024</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/icons/icon_k_no.png" size="30,30" position="290,1016" zPosition="1" />
+  <!-- TUNER STATUS L -->
+  <widget source="session.FrontendInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_l.png" size="30,30" position="290,1045" zPosition="3" alphatest="blend">
+    <convert type="speedyFrontendInfo">NUMBER</convert>
+    <convert type="ValueRange">11,11</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.TunerInfo" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_l_akt.png" size="30,30" position="290,1045" zPosition="2" alphatest="blend">
+    <convert type="TunerInfo">TunerUseMask</convert>
+    <convert type="ValueBitTest">2048</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/icons/icon_l_no.png" size="30,30" position="290,1045" zPosition="1" />
+  <widget source="session.CurrentService" render="speedyAXBlueXPicon" position="29,840" size="350,165" zPosition="4" transparent="0" alphatest="blend">
+    <convert type="speedyServiceName">Reference</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="433,837" size="150,50" font="NotoSans-Bold; 40" halign="center" backgroundColor="black" transparent="1" valign="center" zPosition="3">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="1222,841" size="180,50" font="NotoSans-Bold; 40" halign="center" backgroundColor="black" transparent="1" valign="center" zPosition="3">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="session.Event_Now" render="speedyAXBlueRunningText" options="movetype=running,direction=left,startpoint=0,scrollamount=60,step=1,steptime=10,startdelay=2500,wrap=1,always=0,repeat=0,oneshot=1" position="582,837" size="635,53" font="NotoSans-Bold;40" foregroundColor="white" backgroundColor="black" valign="center" halign="left" transparent="1" zPosition="3">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="1395,841" size="180,50" font="NotoSans-Bold; 40" halign="center" backgroundColor="black" transparent="1" foregroundColor="red" zPosition="3" valign="center">
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+  <widget source="session.Event_Now" render="speedyProgress" pixmap="4ATV_speedy_blue/progress/progress1065_2.png" position="497,917" size="1015,12" zPosition="2" transparent="0">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <widget source="session.Event_Next" render="speedyAXBlueRunningText" options="movetype=running,direction=left,startpoint=0,scrollamount=60,step=1,steptime=10,startdelay=2500,wrap=1,always=0,repeat=0,oneshot=1" position="584,950" size="805,53" font="NotoSans-Bold;40" foregroundColor="orange" backgroundColor="black" valign="center" halign="left" transparent="1" zPosition="3">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="1395,952" size="180,50" font="NotoSans-Bold; 40" halign="center" backgroundColor="black" transparent="1" foregroundColor="green" zPosition="3" valign="center">
+    <convert type="EventTime">Duration</convert>
+    <convert type="ClockToText">InMinutes</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="430,952" size="150,50" font="NotoSans-Bold; 40" halign="center" backgroundColor="black" transparent="1" noWrap="1" zPosition="3" valign="center">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="session.CurrentService" render="speedyAXBlueRunningText" options="movetype=running,direction=left,startpoint=0,scrollamount=60,step=1,steptime=10,startdelay=2500,wrap=1,always=0,repeat=0,oneshot=1" position="32,764" size="620,55" font="Regular; 48" noWrap="1" backgroundColor="black" forgroundColor="white" transparent="1" halign="center" valign="top" zPosition="2">
+    <convert type="speedyServiceName">Name</convert>
+  </widget>
+  <ePixmap pixmap="4ATV_speedy_blue/icons/event.png" position="408,846" size="44,35" zPosition="3" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/icons/test/ico_format_off.png" position="1230,767" size="104,51" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/test/ico_format_on.png" position="1230,767" size="104,51" zPosition="3" alphatest="blend" transparent="1">
+    <convert type="speedyServiceInfo">IsWidescreen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="4ATV_speedy_blue/icons/test/ico_txt_off.png" position="1345,767" size="104,51" zPosition="1" alphatest="blend" />
+  <widget alphatest="blend" pixmap="4ATV_speedy_blue/icons/test/ico_txt_on.png" position="1345,767" render="Pixmap" size="104,51" source="session.CurrentService" zPosition="3" transparent="1">
+    <convert type="speedyServiceInfo">HasTelext</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/test/ico_iptv_on.png" alphatest="blend" position="1575,767" zPosition="3" size="104,51" transparent="1">
+    <convert type="speedyServiceInfo">IsStream</convert>
+    <convert type="ConditionalShowHide">
+    </convert>
+  </widget>
+  <ePixmap pixmap="4ATV_speedy_blue/icons/test/ico_hbbtv_off.png" position="1005,767" size="104,51" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" position="1005,767" size="104,51" zPosition="2" pixmap="4ATV_speedy_blue/icons/test/ico_hbbtv_on.png" alphatest="blend" transparent="1">
+    <convert type="speedyServiceInfo">HasHBBTV</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/icons/test/ico_sub_off.png" position="890,768" size="104,51" zPosition="1" transparent="1" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/test/ico_sub_on.png" position="890,768" size="104,51" zPosition="2" alphatest="blend" transparent="1">
+    <convert type="speedyServiceInfo">SubservicesAvailable</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/icons/test/ico_rec_off.png" position="1460,768" size="104,51" zPosition="2" />
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/icons/test/ico_iptv_off.png" position="1575,768" size="104,51" zPosition="1" />
+  <widget source="session.CurrentService" position="775,767" size="104,51" render="Pixmap" pixmap="4ATV_speedy_blue/icons/test/ico_uhd_on.png" zPosition="5" alphatest="blend" transparent="0">
+    <convert type="speedyServiceInfo">VideoHeight</convert>
+    <convert type="ValueRange">1081,5000</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="4ATV_speedy_blue/icons/logo_neu.png" position="1800,769" size="85,50" alphatest="blend" zPosition="1" transparent="1" />
+  <widget alphatest="blend" pixmap="4ATV_speedy_blue/icons/test/ico_sd_on_576.png" position="775,768" render="Pixmap" size="104,51" source="session.CurrentService" zPosition="2">
+    <convert type="speedyServiceInfo">VideoWidth</convert>
+    <convert type="ValueRange">0,1279</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget alphatest="blend" pixmap="4ATV_speedy_blue/icons/test/ico_hd_on_720.png" position="775,767" render="Pixmap" size="104,51" source="session.CurrentService" zPosition="3">
+    <convert type="speedyServiceInfo">VideoHeight</convert>
+    <convert type="ValueRange">720,992</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget alphatest="blend" pixmap="4ATV_speedy_blue/icons/test/ico_hd_on_1080.png" position="775,768" render="Pixmap" size="104,51" source="session.CurrentService" zPosition="4" transparent="1">
+    <convert type="speedyServiceInfo">VideoHeight</convert>
+    <convert type="ValueRange">1001,1080</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap position="1690,768" zPosition="2" size="104,51" pixmap="4ATV_speedy_blue/icons/test/ico_crypt_off.png" alphatest="blend" />
+  <widget alphatest="blend" pixmap="4ATV_speedy_blue/icons/test/ico_crypt_on.png" position="1690,768" render="Pixmap" size="104,51" source="session.CurrentService" zPosition="3" transparent="1">
+    <convert type="speedyServiceInfo">IsCrypted</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="speedyAXBlueRunningText" options="movetype=running,startpoint=0,direction=left,steptime=10,repeat=1,startdelay=2500,always=0" position="508,1034" size="850,35" font="HandelGotDBol; 30" backgroundColor="background" transparent="1" zPosition="5" text="12519 V 27500 Auto" halign="left" borderWidth="2" borderColor="red">
+    <convert type="ServiceName2">%O  %s  %F %p %Y %f %M %b %o %r</convert>
+  </widget>
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/icons/test/ico_lan_off.png" position="660,767" size="104,51" zPosition="1" transparent="1" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/test/ico_wifi_on.png" position="660,767" zPosition="3" size="104,51" transparent="1" alphatest="blend">
+    <convert type="speedyRouteInfo">Wifi</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/test/ico_lan_on.png" position="660,767" zPosition="4" size="104,51" transparent="1" alphatest="blend">
+    <convert type="speedyRouteInfo">Lan</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="4ATV_speedy_blue/icons/test/audio_flags.png" position="1120,765" size="104,51" zPosition="1" alphatest="blend" />
+  <widget alphatest="on" path="/media/usb/audioicon_infobar" position="1120,766" render="speedyextAudioIcon" size="104,51" source="session.CurrentService" zPosition="2" transparent="0">
+    <convert type="speedyextaudioinfo">AudioIcon</convert>
+  </widget>
+  <ePixmap pixmap="4ATV_speedy_blue/icons/test/ico_sd_off_576.png" position="775,768" size="104,51" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/crypticons/ico_net1_on.png" position="726,783" size="21,21" zPosition="5" alphatest="blend">
+    <convert type="speedyTestConnection">
+    </convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="global.CurrentTime" render="Pixmap" pixmap="4ATV_speedy_blue/crypticons/ico_net1_off.png" position="726,783" size="20,20" alphatest="blend" zPosition="4">
+    <convert type="speedyAlwaysTrue" />
+    <convert type="ConditionalShowHide">Blink</convert>
+  </widget>
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/menu/mediapointer_orange.png" position="400,902" size="1185,41" zPosition="1" transparent="0" />
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/menu/sendung_hintergrund.png" position="400,948" size="1190,62" zPosition="0" />
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/menu/sendung_hintergrund.png" position="400,837" size="1190,60" zPosition="0" />
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/menu/picon_hintergrund.png" position="25,836" size="360,174" zPosition="0" />
+  <ePixmap pixmap="4ATV_speedy_blue/icons/test/ico_format_off.png" position="1230,767" size="104,51" zPosition="1" alphatest="blend" />
+  <widget alphatest="blend" pixmap="4ATV_speedy_blue/icons/test/ico_sub_on.png" position="890,767" render="Pixmap" size="104,51" source="session.CurrentService" zPosition="3" transparent="1">
+    <convert type="speedyVServiceInfo">SubtitlesAvailable</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/test/ico_net_on.png" position="6600,767" size="104,51" zPosition="3" alphatest="blend" transparent="1">
+    <convert type="speedyTestConnection">
+    </convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <eLabel text="Frequenz:" position="396,1038" size="115,30" font="NotoSans-Bold; 21" backgroundColor="black" transparent="1" foregroundColor="bernstein" zPosition="5" valign="center" />
+  <widget source="session.CurrentService" position="508,1007" size="1300,40" font="HandelGotDBol; 30" render="Label" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="1" borderWidth="3" borderColor="orange">
+    <convert type="speedyHDECMLine">VeryLong,FTAVisible</convert>
+  </widget>
+  <eLabel text="Cam-Info:" position="395,1008" size="115,30" font="NotoSans-Bold; 21" backgroundColor="black" transparent="1" foregroundColor="orange" zPosition="5" halign="center" valign="center" />
+  <ePixmap name="" position="29,1013" size="80,60" pixmap="4ATV_speedy_blue/icons/dish3.png" transparent="1" zPosition="1" alphatest="blend" />
+  <widget source="global.CurrentTime" render="Label" position="1558,840" size="370,45" font="DS-DIGIT; 30" halign="center" backgroundColor="black" transparent="1" zPosition="6">
+    <convert type="ClockToText">Format:%A %d.%m.%Y</convert>
+  </widget>
+  <!-- Flip Clock */-->
+  <widget source="global.CurrentTime" render="speedyblue3flipclock" position="1595,890" zPosition="5" size="40,111" alphatest="blend" transparent="1">
+    <convert type="ClockToText">Format:H1 %H</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="speedyblue3flipclock" position="1635,890" zPosition="5" size="40,111" alphatest="blend" transparent="1">
+    <convert type="ClockToText">Format:H2 %H</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="speedyblue3flipclock" position="1700,890" zPosition="5" size="40,111" alphatest="blend" transparent="1">
+    <convert type="ClockToText">Format:M1 %M</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="speedyblue3flipclock" position="1740,890" zPosition="5" size="40,111" alphatest="blend" transparent="1">
+    <convert type="ClockToText">Format:M2 %M</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="speedyblue3flipclock" position="1810,890" zPosition="5" size="40,111" alphatest="blend" transparent="1">
+    <convert type="ClockToText">Format:S1 %S</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="speedyblue3flipclock" position="1850,890" zPosition="5" size="40,111" alphatest="blend" transparent="1">
+    <convert type="ClockToText">Format:S2 %S</convert>
+  </widget>
+ <widget source="global.CurrentTime" render="Pixmap" pixmap="4ATV_speedy_blue/menu/blink.png" position="1682,935" alphatest="blend" size="10,30" transparent="1" zPosition="6">
+  <convert type="speedyAlwaysTrue" />
+  <convert type="ConditionalShowHide">Blink</convert>
+</widget>
+<ePixmap name="" position="1790,935" size="10,30" zPosition="6" pixmap="4ATV_speedy_blue/menu/blink.png" transparent="0" alphatest="blend" />
+  <!-- Flip Clock -->
+  <widget backgroundColor="black" foregroundColor="orange" font="NotoSans-Bold; 24" halign="center" position="1587,1041" render="Label" size="302,28" source="session.CurrentService" valign="center" zPosition="11">
+    <convert type="speedyBoxInfo">BoxType</convert>
+  </widget>
+  <ePixmap pixmap="4ATV_speedy_blue/menu/Rahmen_150_45.png" position="428,840" size="150,55" zPosition="2" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/Rahmen_150_45.png" position="428,951" size="150,55" zPosition="2" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/Rahmen_640_45.png" position="580,840" size="640,55" zPosition="2" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/Rahmen_810_45.png" position="582,951" size="810,55" zPosition="2" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/Rahmen_180_45.png" position="1224,840" size="180,55" zPosition="2" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/Rahmen_180_45.png" position="1397,840" size="180,55" zPosition="2" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/Rahmen_180_45.png" position="1397,951" size="180,55" zPosition="2" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/Rahmen_620_45.png" position="33,766" size="620,55" zPosition="2" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/infobar_cover.png" position="442,908" size="1100,27" zPosition="3" alphatest="blend" transparent="1" />
+  <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_stableupdate.png" position="1840,1007" size="30,30" zPosition="1" alphatest="blend">
+    <convert type="speedyConditionalShowHide">Blink</convert>
+  </widget>
+  <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="4ATV_speedy_blue/icons/icon_unstableupdate.png" position="1840,1007" size="30,30" zPosition="2" alphatest="blend">
+    <convert type="speedyConditionalShowHide">Blink</convert>
+  </widget>
+  <ePixmap pixmap="4ATV_speedy_blue/icons/icon_update_off.png" position="1840,1007" size="30,30" zPosition="3" alphatest="blend" />
+  <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/menu/wetterback.png" position="0,0" size="1925,150" zPosition="2" />
+  <widget font="LCD; 21" halign="center" position="1740,535" render="Label" size="150,70" source="session.CurrentService" backgroundColor="black" transparent="0" zPosition="1" foregroundColor="orange" valign="bottom">
+    <convert type="speedyBoxInfo">Uptime</convert>
+  </widget>
+  <widget source="session.CurrentService" render="speedyPicCript2" path="cript" position="1559,431" size="150,95" alphatest="blend" zPosition="1" />
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="1605,250" size="300,26" halign="left" valign="center" font="Replacement; 22" transparent="1" backgroundColor="black">
+    <convert type="speedyProgressDiskSpaceInfo">HddInfo,Full</convert>
+  </widget>
+  <ePixmap position="1541,250" size="50,50" pixmap="4ATV_speedy_blue/icons/hdd1.png" zPosition="2" alphatest="blend" transparent="1" />
+  <ePixmap position="1605,280" zPosition="2" size="300,22" pixmap="4ATV_speedy_blue/icons/device1_bg.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="speedyProgress" pixmap="4ATV_speedy_blue/icons/device1.png" position="1610,285" size="288,11" transparent="1" zPosition="3">
+    <convert type="speedyProgressDiskSpaceInfo">HddInfo</convert>
+  </widget>
+  <ePixmap position="1540,310" size="50,50" pixmap="4ATV_speedy_blue/icons/memory.png" zPosition="2" alphatest="blend" transparent="1" />
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="1605,310" size="300,26" halign="left" valign="center" font="Replacement; 22" transparent="1" backgroundColor="black">
+    <convert type="speedyProgressDiskSpaceInfo">MemTotal,Full</convert>
+  </widget>
+  <ePixmap position="1605,340" zPosition="2" size="300,22" pixmap="4ATV_speedy_blue/icons/device1_bg.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="speedyProgress" pixmap="4ATV_speedy_blue/icons/device1.png" position="1610,345" size="288,11" transparent="1" zPosition="3">
+    <convert type="speedyProgressDiskSpaceInfo">MemTotal</convert>
+  </widget>
+  <ePixmap position="1541,370" size="50,50" pixmap="4ATV_speedy_blue/icons/usb.png" zPosition="2" alphatest="blend" transparent="1" />
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="1605,370" size="300,26" halign="left" valign="center" font="Replacement; 22" transparent="1" backgroundColor="black">
+    <convert type="speedyProgressDiskSpaceInfo">UsbInfo,Full</convert>
+  </widget>
+  <ePixmap position="1605,400" zPosition="2" size="300,22" pixmap="4ATV_speedy_blue/icons/device1_bg.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="speedyProgress" pixmap="4ATV_speedy_blue/icons/device1.png" position="1610,405" size="288,11" transparent="1" zPosition="3">
+    <convert type="speedyProgressDiskSpaceInfo">UsbInfo</convert>
+  </widget>
+  <ePixmap position="1541,190" size="50,50" pixmap="4ATV_speedy_blue/icons/module.png" zPosition="2" alphatest="blend" transparent="1" />
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="1605,193" size="300,26" halign="left" valign="center" font="Replacement; 22" transparent="1" backgroundColor="black">
+    <convert type="speedyProgressDiskSpaceInfo">Flesh,Full</convert>
+  </widget>
+  <ePixmap position="1605,223" zPosition="2" size="300,22" pixmap="4ATV_speedy_blue/icons/device1_bg.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="speedyProgress" pixmap="4ATV_speedy_blue/icons/device1.png" position="1610,228" size="288,11" transparent="1" zPosition="3">
+    <convert type="speedyProgressDiskSpaceInfo">FleshInfo</convert>
+  </widget>
+  <eLabel name="" position="1560,431" size="150,95" backgroundColor="black" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/dvbc.png" position="1770,608" size="97,38" zPosition="1" alphatest="blend">
+    <convert type="speedyServiceInfoEX">IsCable</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/dvbs.png" position="1770,608" size="97,38" zPosition="2" alphatest="blend">
+    <convert type="speedyServiceInfoEX">IsSatellite</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/dvbs2.png" position="1770,608" zPosition="4" size="97,38" alphatest="blend">
+    <convert type="speedyServiceInfoEX">IsSatelliteS2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/dvb-t.png" position="1770,608" size="97,38" zPosition="3" alphatest="blend">
+    <convert type="speedyServiceInfoEX">IsTerrestrial</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/dvbt2.png" position="1770,608" size="97,38" zPosition="5" alphatest="blend">
+    <convert type="speedyServiceInfoEX">IsTerrestrial2</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="4ATV_speedy_blue/menu/bg_snr.png" position="1556,645" size="155,50" zPosition="1" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/bg_agc.png" position="1556,706" size="155,50" zPosition="1" alphatest="blend" />
+  <!-- Wetter Info -->
+<widget source="session.CurrentService" render="Label" position="345,6" size="260,30" font="NotoSans-Bold; 22" zPosition="5" halign="center" valign="top" backgroundColor="black" transparent="1" noWrap="1" foregroundColor="bernstein" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTodayDay</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="343,88" size="260,55" font="NotoSans-Bold; 20" zPosition="5" halign="center" valign="center" foregroundColor="bernstein" backgroundColor="black" transparent="1" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTodayText</convert>
+  </widget>
+  <widget source="session.CurrentService" render="speedyPiconWeather" path="4ATV_speedy_blue/weather" position="1579,27" size="75,90" zPosition="5" transparent="1" alphatest="blend">
+  <convert type="speedyVWeather3">forecastTomorrow3Picon</convert>
+</widget>
+<widget source="session.CurrentService" render="speedyPiconWeather" path="4ATV_speedy_blue/weather" position="1256,27" size="75,90" zPosition="5" transparent="1" alphatest="blend">
+  <convert type="speedyVWeather3">forecastTomorrow2Picon</convert>
+</widget>
+<widget source="session.CurrentService" render="speedyPiconWeather" path="4ATV_speedy_blue/weather" position="933,27" size="75,90" zPosition="5" transparent="1" alphatest="blend">
+  <convert type="speedyVWeather3">forecastTomorrow1Picon</convert>
+</widget>
+<widget source="session.CurrentService" render="speedyPiconWeather" path="4ATV_speedy_blue/weather" position="610,27" size="75,90" zPosition="5" transparent="1" alphatest="blend">
+  <convert type="speedyVWeather3">forecastTomorrowPicon</convert>
+</widget>
+<widget source="session.CurrentService" render="speedyPiconWeather" path="4ATV_speedy_blue/weather" position="256,27" size="75,90" zPosition="5" transparent="1" alphatest="blend">
+  <convert type="speedyVWeather3">currentWeatherPicon</convert>
+</widget>
+  <widget source="session.CurrentService" render="Label" position="689,6" size="240,30" font="NotoSans-Bold; 22" zPosition="5" halign="center" valign="top" backgroundColor="black" transparent="1" noWrap="1" foregroundColor="un38ff48" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTomorrowDay</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="685,88" size="240,55" font="NotoSans-Bold; 20" zPosition="5" halign="center" valign="center" foregroundColor="un38ff48" backgroundColor="black" transparent="1" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTomorrowText</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1012,6" size="237,30" font="NotoSans-Bold; 22" zPosition="5" halign="center" valign="top" backgroundColor="black" transparent="1" noWrap="1" foregroundColor="red" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTomorrow1Day</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1011,88" size="237,55" font="NotoSans-Bold; 20" zPosition="5" halign="center" valign="center" foregroundColor="red" backgroundColor="black" transparent="1" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTomorrow1Text</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1335,6" size="237,30" font="NotoSans-Bold; 22" zPosition="5" halign="center" valign="top" backgroundColor="black" transparent="1" noWrap="1" foregroundColor="yellow" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTomorrow2Day</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1336,88" size="237,55" font="NotoSans-Bold; 20" zPosition="5" halign="center" valign="center" foregroundColor="yellow" backgroundColor="black" transparent="1" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTomorrow2Text</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1665,88" size="240,55" font="NotoSans-Bold; 20" zPosition="5" halign="center" valign="center" backgroundColor="black" transparent="1" foregroundColor="grey" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTomorrow3Text</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1661,6" size="240,30" font="NotoSans-Bold; 22" zPosition="5" halign="center" valign="top" backgroundColor="black" transparent="1" noWrap="1" foregroundColor="grey1" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTomorrow3Day</convert>
+  </widget>
+  <eLabel text="Status:" position="1,59" size="120,35" zPosition="8" halign="left" font="NotoSans-Bold; 28" backgroundColor="black" transparent="1" borderWidth="3" borderColor="orange" />
+  <widget source="session.CurrentService" render="Label" position="1,7" size="240,40" font="NotoSans-Bold; 28" zPosition="8" halign="left" valign="center" foregroundColor="green" backgroundColor="black" transparent="1" noWrap="1" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">currentLocation</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="118,57" size="135,35" font="NotoSans-Bold; 26" zPosition="8" halign="center" valign="center" foregroundColor="yellow" backgroundColor="black" transparent="1" noWrap="1" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">downloadTime</convert>
+  </widget>
+  <ePixmap pixmap="4ATV_speedy_blue/icons/thermo1.png" position="349,42" size="29,40" zPosition="6" alphatest="blend" />
+  <widget source="session.CurrentService" render="Label" position="380,50" size="80,25" font="NotoSans-Bold; 25" zPosition="5" halign="right" valign="center" foregroundColor="bluelabel" backgroundColor="black" transparent="1" noWrap="1" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTodayTempMin</convert>
+  </widget>
+  <eLabel text="-" position="462,50" size="25,25" font="Regular; 28" foregroundColor="foreground" backgroundColor="background" halign="center" valign="center" transparent="1" zPosition="5" />
+  <widget source="session.CurrentService" render="Label" position="489,50" size="80,25" font="NotoSans-Bold; 25" zPosition="5" halign="left" valign="center" foregroundColor="red" backgroundColor="black" transparent="1" noWrap="1" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTomorrowTempMax</convert>
+  </widget>
+  <ePixmap pixmap="4ATV_speedy_blue/icons/thermo.png" position="558,42" size="29,40" zPosition="6" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/icons/thermo1.png" position="688,42" size="29,40" zPosition="6" alphatest="blend" />
+  <widget source="session.CurrentService" render="Label" position="716,50" size="80,25" font="NotoSans-Bold; 25" zPosition="5" halign="right" valign="center" foregroundColor="bluelabel" backgroundColor="black" transparent="1" noWrap="1" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTomorrowTempMin</convert>
+  </widget>
+  <eLabel text="-" position="798,50" size="25,25" font="Regular; 28" foregroundColor="foreground" backgroundColor="background" halign="center" valign="center" transparent="1" zPosition="5" />
+  <widget source="session.CurrentService" render="Label" position="825,50" size="80,25" font="NotoSans-Bold; 25" zPosition="5" halign="left" valign="center" foregroundColor="red" backgroundColor="black" transparent="1" noWrap="1" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTomorrowTempMax</convert>
+  </widget>
+  <ePixmap pixmap="4ATV_speedy_blue/icons/thermo.png" position="894,42" size="29,40" zPosition="6" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/icons/thermo1.png" position="1013,42" size="29,40" zPosition="6" alphatest="blend" />
+  <widget source="session.CurrentService" render="Label" position="1042,50" size="80,25" font="NotoSans-Bold; 25" zPosition="5" halign="right" valign="center" foregroundColor="bluelabel" backgroundColor="black" transparent="1" noWrap="1" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTomorrow1TempMin</convert>
+  </widget>
+  <eLabel text="-" position="1122,49" size="25,25" font="Regular; 28" foregroundColor="foreground" backgroundColor="background" halign="center" valign="center" transparent="1" zPosition="5" />
+  <widget source="session.CurrentService" render="Label" position="1149,50" size="80,25" font="NotoSans-Bold; 25" zPosition="5" halign="left" valign="center" foregroundColor="red" backgroundColor="black" transparent="1" noWrap="1" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTomorrow1TempMax</convert>
+  </widget>
+  <ePixmap pixmap="4ATV_speedy_blue/icons/thermo.png" position="1218,42" size="30,40" zPosition="6" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/icons/thermo1.png" position="1332,42" size="29,40" zPosition="6" alphatest="blend" />
+  <widget source="session.CurrentService" render="Label" position="1360,50" size="80,25" font="NotoSans-Bold; 25" zPosition="5" halign="right" valign="center" foregroundColor="bluelabel" backgroundColor="black" transparent="1" noWrap="1" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTomorrow2TempMin</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1471,50" size="80,25" font="NotoSans-Bold; 25" zPosition="5" halign="left" valign="center" foregroundColor="red" backgroundColor="black" transparent="1" noWrap="1" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTomorrow2TempMax</convert>
+  </widget>
+  <eLabel text="-" position="1443,50" size="25,25" font="Regular; 28" foregroundColor="foreground" backgroundColor="background" halign="center" valign="center" transparent="1" zPosition="5" />
+  <ePixmap pixmap="4ATV_speedy_blue/icons/thermo.png" position="1539,42" size="29,40" zPosition="6" alphatest="blend" transparent="0" />
+  <ePixmap pixmap="4ATV_speedy_blue/icons/thermo1.png" position="1656,42" size="29,40" zPosition="6" alphatest="blend" />
+  <widget source="session.CurrentService" render="Label" position="1686,50" size="80,25" font="NotoSans-Bold; 25" zPosition="5" halign="right" valign="center" foregroundColor="bluelabel" backgroundColor="black" transparent="1" noWrap="1" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTomorrow3TempMin</convert>
+  </widget>
+  <eLabel text="-" position="1768,50" size="25,25" font="Regular; 28" foregroundColor="foreground" backgroundColor="background" halign="center" valign="center" transparent="1" zPosition="5" />
+  <widget source="session.CurrentService" render="Label" position="1796,50" size="80,25" font="NotoSans-Bold; 25" zPosition="5" halign="left" valign="center" foregroundColor="red" backgroundColor="black" transparent="1" noWrap="1" borderWidth="2" borderColor="white">
+    <convert type="speedyVWeather3">forecastTomorrow3TempMax</convert>
+  </widget>
+  <ePixmap pixmap="4ATV_speedy_blue/icons/thermo.png" position="1865,42" size="29,40" zPosition="6" alphatest="blend" />
+<widget source="session.CurrentService" noWrap="1" render="Label" position="185,105" size="170,40" font="NotoSans-Bold; 28" foregroundColor="green" backgroundColor="black" halign="left" valign="center" zPosition="5" transparent="1" borderWidth="3" borderColor="white">
+  <convert type="speedyVWeather3">downloadDate</convert>
+</widget>
+<eLabel text="Aktualisiert am:" position="1,103" size="190,40" font="NotoSans-Bold; 22" zPosition="5" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="0" borderWidth="3" borderColor="red" />
+  <!-- Wetter Info -->
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/picon_IPTV2.png" position="1741,431" size="150,95" zPosition="4" transparent="0" alphatest="blend">
+    <convert type="speedyServiceInfoEX">IsStreamTV</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/picon_dvb-t.png" position="1741,431" size="150,95" zPosition="3" transparent="0" alphatest="blend">
+    <convert type="speedyServiceInfoEX">IsTerrestrial</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/dvb-c1.png" position="1741,431" size="150,95" zPosition="2" transparent="1" alphatest="blend">
+    <convert type="speedyServiceInfoEX">IsCable</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/picon_dvb-t2.png" position="1741,431" size="150,95" zPosition="2" transparent="1" alphatest="blend">
+    <convert type="speedyServiceInfoEX">IsTerrestrial</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/dvb-c2.png" position="1741,431" size="150,95" zPosition="2" transparent="1" alphatest="blend">
+    <convert type="speedyServiceInfoEX">IsCable</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="speedyCicontrol" position="1560,541" size="150,95" zPosition="0" transparent="1" alphatest="on" />
+  <ePixmap name="back" position="1529,146" size="390,620" pixmap="4ATV_speedy_blue/menu/info_panel2_2.png" zPosition="-2" />
+  <eLabel name="" position="1629,155" size="200,35" text="Infobox ATV" font="NotoSans-Bold; 22" halign="center" valign="top" />
+  <widget source="session.FrontendStatus" render="speedyProgress" position="1621,720" size="81,24" zPosition="2" pixmap="4ATV_speedy_blue/icons/bar_snr_2_2.png" transparent="1">
+  <convert type="speedyFrontendInfo">AGC</convert>
+</widget>
+<widget source="session.FrontendStatus" render="Label" position="1618,719" size="87,28" backgroundColor="red" transparent="1" halign="center" font="NotoSans-Bold; 22" valign="center" zPosition="3" foregroundColor="white">
+  <convert type="speedyFrontendInfo">AGC</convert>
+</widget>
+<widget source="session.FrontendStatus" render="speedyProgress" position="1621,659" size="81,24" zPosition="6" pixmap="4ATV_speedy_blue/icons/bar_snr_2.png" transparent="1" backgroundColor="AX_Background">
+  <convert type="speedyFrontendInfo">SNR</convert>
+</widget>
+<widget source="session.FrontendStatus" render="Label" position="1618,657" size="87,28" backgroundColor="snr" transparent="1" halign="center" font="NotoSans-Bold; 22" valign="center" zPosition="7" foregroundColor="white">
+  <convert type="speedyFrontendInfo">SNR</convert>
+</widget>
+<widget source="session.CurrentService" render="speedyPiconProv" path="speedy_prov" position="1740,653" size="150,95" zPosition="1" transparent="0" halign="center" alphatest="blend">
+  <convert type="speedyServiceName">Provider</convert>
+</widget>
+<widget source="session.CurrentService" render="speedyPicEmu2" position="1560,541" size="150,95" transparent="0" alphatest="blend" zPosition="1" />
+<widget source="session.CurrentService" render="speedyPiconProv" path="speedy_prov" position="1740,652" size="150,95" zPosition="1" transparent="0" halign="center" alphatest="blend">
+  <convert type="speedyServiceName">Provider</convert>
+</widget>
+<widget source="session.CurrentService" render="speedyPiconSatTV" position="1740,430" size="150,95" zPosition="1" transparent="0" alphatest="on" />
+</screen>
+  </skin>

@@ -1,0 +1,7 @@
+  <skin>
+  <!--skin_Volume_18-->
+<screen name="Volume" position="862,442" size="256,256" title="Volume" backgroundColor="transparent" zPosition="4" flags="wfNoBorder">
+<widget source="global.CurrentTime" render="speedyCycle" position="0,0" size="256,256" alphatest="blend" transparent="1" zPosition="5" />
+<eLabel name="new eLabel" position="40,168" size="175,26" text="volume" zPosition="6" font="Replacement; 24" halign="center" backgroundColor="black" transparent="1" foregroundColor="white" valign="center" />
+</screen>
+</skin>

@@ -1,0 +1,8 @@
+<skin>
+<!--skin_Volume_7-->
+<screen backgroundColor="transparent" zPosition="4" flags="wfNoBorder" name="Volume" position="310,30" size="1300,70" title="Volume">
+<widget backgroundColor="background" foregroundColor="yellow" font="Regular;30" halign="center" position="1175,17" render="speedyVolumeText" size="90,33" source="global.CurrentTime" zPosition="6" transparent="1" />
+<ePixmap pixmap="4ATV_speedy_blue/volume/volume_bg6.png" position="0,0" size="1300,70" alphatest="blend" />
+<widget name="Volume" pixmap="4ATV_speedy_blue/volume/volume6.png" position="133,23" size="995,25" transparent="1" zPosition="6" />
+</screen>
+</skin>

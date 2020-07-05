@@ -1,0 +1,212 @@
+<skin>
+<!--skin_Infobar_black_AnalogClock_vweather_oben_Info_oben-->
+<screen name="InfoBar" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" borderWidth="0" borderColor="transparent">
+ <!-- VWeather3/-->
+<widget source="session.CurrentService" position="31,0" size="97,57" render="Picon" transparent="0" alphatest="blend" zPosition="1">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <!--Picon*/-->
+  <widget source="session.CurrentService" render="Label" position="52,829" size="130,27" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTodayDay</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="52,856" size="130,27" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTodayDate</convert>
+  </widget>
+  <widget source="session.CurrentService" render="speedyPiconWeather" path="4ATV_speedy_blue/weather/" position="88,895" size="56,56" zPosition="1" transparent="1" alphatest="blend">
+    <convert type="VWeather3">forecastTodayPicon</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="154,906" size="80,25" font="Regular; 22" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTodayTempMin</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="0,906" size="80,25" font="Regular; 22" zPosition="1" halign="right" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTodayTempMax</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="24,958" size="180,54" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1">
+    <convert type="VWeather3">forecastTodayText</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="287,830" size="130,27" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrowDay</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="287,857" size="130,27" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrowDate</convert>
+  </widget>
+  <widget source="session.CurrentService" render="speedyPiconWeather" path="4ATV_speedy_blue/weather/" position="329,895" size="56,56" zPosition="1" transparent="1" alphatest="blend">
+    <convert type="VWeather3">forecastTomorrowPicon</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="395,906" size="80,25" font="Regular; 22" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrowTempMin</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="239,906" size="80,25" font="Regular; 22" zPosition="1" halign="right" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrowTempMax</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="269,958" size="180,54" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1">
+    <convert type="VWeather3">forecastTomorrowText</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="534,830" size="130,27" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow1Day</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="534,857" size="130,27" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow1Date</convert>
+  </widget>
+  <widget source="session.CurrentService" render="speedyPiconWeather" path="4ATV_speedy_blue/weather/" position="570,895" size="56,56" zPosition="1" transparent="1" alphatest="blend">
+    <convert type="VWeather3">forecastTomorrow1Picon</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="636,906" size="80,25" font="Regular; 22" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow1TempMin</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="480,906" size="80,25" font="Regular; 22" zPosition="1" halign="right" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow1TempMax</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="506,958" size="180,54" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1">
+    <convert type="VWeather3">forecastTomorrow1Text</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="772,830" size="130,27" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow2Day</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="772,857" size="130,27" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow2Date</convert>
+  </widget>
+  <widget source="session.CurrentService" render="speedyPiconWeather" path="4ATV_speedy_blue/weather/" position="811,895" size="56,56" zPosition="1" transparent="1" alphatest="blend">
+    <convert type="VWeather3">forecastTomorrow2Picon</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="877,906" size="80,25" font="Regular; 22" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow2TempMin</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="721,906" size="80,25" font="Regular; 22" zPosition="1" halign="right" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow2TempMax</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="745,958" size="180,54" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1">
+    <convert type="VWeather3">forecastTomorrow2Text</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1012,830" size="130,27" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow3Day</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1012,857" size="130,27" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow3Date</convert>
+  </widget>
+  <widget source="session.CurrentService" render="speedyPiconWeather" path="4ATV_speedy_blue/weather/" position="1052,895" size="56,56" zPosition="1" transparent="1" alphatest="blend">
+    <convert type="VWeather3">forecastTomorrow3Picon</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1118,906" size="80,25" font="Regular; 22" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow3TempMin</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="962,906" size="80,25" font="Regular; 22" zPosition="1" halign="right" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow3TempMax</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="990,958" size="180,54" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1">
+    <convert type="VWeather3">forecastTomorrow3Text</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1253,830" size="130,27" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow4Day</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1253,857" size="130,27" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow4Date</convert>
+  </widget>
+  <widget source="session.CurrentService" render="speedyPiconWeather" path="4ATV_speedy_blue/weather/" position="1293,895" size="56,56" zPosition="1" transparent="1" alphatest="blend">
+    <convert type="VWeather3">forecastTomorrow4Picon</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1359,906" size="80,25" font="Regular; 22" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow4TempMin</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1203,906" size="80,25" font="Regular; 22" zPosition="1" halign="right" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow4TempMax</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1231,958" size="180,54" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1">
+    <convert type="VWeather3">forecastTomorrow4Text</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1495,830" size="130,27" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow5Day</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1495,857" size="130,27" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow5Date</convert>
+  </widget>
+  <widget source="session.CurrentService" render="speedyPiconWeather" path="4ATV_speedy_blue/weather/" position="1534,895" size="56,56" zPosition="1" transparent="1" alphatest="blend">
+    <convert type="VWeather3">forecastTomorrow5Picon</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1600,906" size="80,25" font="Regular; 22" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow5TempMin</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1444,906" size="80,25" font="Regular; 22" zPosition="1" halign="right" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow5TempMax</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1471,958" size="180,54" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1">
+    <convert type="VWeather3">forecastTomorrow5Text</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1737,830" size="130,27" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow6Day</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1737,857" size="130,27" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow6Date</convert>
+  </widget>
+  <widget source="session.CurrentService" render="speedyPiconWeather" path="4ATV_speedy_blue/weather/" position="1776,895" size="56,56" zPosition="1" transparent="1" alphatest="blend">
+    <convert type="VWeather3">forecastTomorrow6Picon</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1842,906" size="80,25" font="Regular; 22" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow6TempMin</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1685,906" size="80,25" font="Regular; 22" zPosition="1" halign="right" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">forecastTomorrow6TempMax</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1715,958" size="180,54" font="Regular; 22" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1">
+    <convert type="VWeather3">forecastTomorrow6Text</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="55,75" size="445,50" font="Regular; 30" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">currentLocation</convert>
+  </widget>
+  <eLabel text="Aktuell" position="55,150" size="150,40" font="Regular; 28" zPosition="1" halign="right" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" />
+  <widget source="session.CurrentService" render="speedyPiconWeather" path="4ATV_speedy_blue/weather" position="240,132" size="95,95" zPosition="1" transparent="1" alphatest="blend">
+    <convert type="VWeather3">currentWeatherPicon</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="365,150" size="100,40" font="Regular; 28" zPosition="1" halign="left" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">currentWeatherTemp</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="55,230" size="445,50" font="Regular; 24" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">currentWeatherText</convert>
+  </widget>
+  <eLabel text="Gefühlte Temperatur:" position="20,300" size="250,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1" />
+  <widget source="session.CurrentService" render="Label" position="290,300" size="210,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">windChill</convert>
+  </widget>
+  <eLabel text="Windrichtung:" position="20,350" size="250,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1" />
+  <widget source="session.CurrentService" render="Label" position="290,353" size="210,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">windDirectionLong</convert>
+  </widget>
+  <eLabel text="Wind Geschwindigkeit:" position="20,400" size="265,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1" />
+  <widget source="session.CurrentService" render="Label" position="290,400" size="210,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">windSpeed</convert>
+  </widget>
+  <eLabel text="Luftfeuchtigkeit:" position="20,450" size="250,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1" />
+  <widget source="session.CurrentService" render="Label" position="290,450" size="210,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">atmoHumidity</convert>
+  </widget>
+  <eLabel text="Luftdruck:" position="20,500" size="250,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1" />
+  <widget source="session.CurrentService" render="Label" position="290,500" size="210,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">atmoPressure</convert>
+  </widget>
+  <eLabel text="Fernsicht:" position="20,545" size="250,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1" />
+  <widget source="session.CurrentService" render="Label" position="290,545" size="210,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">atmoVisibility</convert>
+  </widget>
+  <eLabel text="GEO-Position:" position="20,590" size="250,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1" />
+  <widget source="session.CurrentService" render="Label" position="290,590" size="210,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">geoData</convert>
+  </widget>
+  <eLabel text="Sonnenaufgang:" position="20,635" size="250,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1" />
+  <widget source="session.CurrentService" render="Label" position="290,634" size="210,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">astroSunrise</convert>
+  </widget>
+  <eLabel text="Sonnenuntergang:" position="20,680" size="250,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" />
+  <widget source="session.CurrentService" render="Label" position="290,680" size="210,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">astroSunset</convert>
+  </widget>
+  <eLabel text="Update Zeit:" position="20,725" size="250,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" />
+  <widget source="session.CurrentService" render="Label" position="290,725" size="210,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">downloadTime</convert>
+  </widget>
+  <eLabel text="Update Datum:" position="20,770" size="250,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" />
+  <widget source="session.CurrentService" render="Label" position="290,770" size="210,30" font="Regular; 24" zPosition="1" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" noWrap="1">
+    <convert type="VWeather3">downloadDate</convert>
+  </widget>
+<!-- VWeather3 Ende!! -->
+</screen>
+  </skin>

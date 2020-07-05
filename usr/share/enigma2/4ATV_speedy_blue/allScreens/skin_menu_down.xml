@@ -1,0 +1,27 @@
+<skin>
+<!-- Menu_down FHD -->
+<screen name="Iconmain" flags="wfNoBorder" position="0,0" backgroundColor="transparent">
+<ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/menu/menue_vertical.png" position="0,775" size="1920,310" zPosition="-1" />
+  <widget name="title" position="20,800" size="1880,100" zPosition="3" halign="left" valign="center" font="NotoSans-Bold;60" backgroundColor="black" transparent="1" borderWidth="2" borderColor="red" />
+  <widget source="label1" render="Label" position="20,925" size="295,123" font="NotoSans-Bold;30" halign="center" valign="center" zPosition="2" foregroundColor="mediumblue" backgroundColor="back_color" transparent="1" />
+  <widget source="label1s" render="Label" position="20,925" size="295,123" font="NotoSans-Bold;36" halign="center" valign="center" zPosition="2" foregroundColor="white" backgroundColor="back_color" transparent="1" />
+  <widget name="pixmap1" position="20,925" size="295,123" zPosition="1" transparent="1" alphatest="on" />
+  <widget source="label2" render="Label" position="336,925" size="295,123" font="NotoSans-Bold;30" halign="center" valign="center" zPosition="2" foregroundColor="mediumblue" backgroundColor="back_color" transparent="1" />
+  <widget source="label2s" render="Label" position="336,925" size="295,123" font="NotoSans-Bold;36" halign="center" valign="center" zPosition="2" foregroundColor="white" backgroundColor="back_color" transparent="1" />
+  <widget name="pixmap2" position="336,925" size="295,123" zPosition="1" transparent="1" alphatest="on" />
+  <widget source="label3" render="Label" position="651,925" size="295,123" font="NotoSans-Bold;30" halign="center" valign="center" zPosition="2" foregroundColor="mediumblue" backgroundColor="back_color" transparent="1" />
+  <widget source="label3s" render="Label" position="651,925" size="295,123" font="NotoSans-Bold;36" halign="center" valign="center" zPosition="2" foregroundColor="white" backgroundColor="back_color" transparent="1" />
+  <widget name="pixmap3" position="651,925" size="295,123" zPosition="1" transparent="1" alphatest="on" />
+  <widget source="label4" render="Label" position="971,925" size="295,123" font="NotoSans-Bold;30" halign="center" valign="center" zPosition="2" foregroundColor="mediumblue" backgroundColor="back_color" transparent="1" />
+  <widget source="label4s" render="Label" position="971,925" size="295,123" font="NotoSans-Bold;36" halign="center" valign="center" zPosition="2" foregroundColor="white" backgroundColor="back_color" transparent="1" />
+  <widget name="pixmap4" position="971,925" size="295,123" zPosition="1" transparent="1" alphatest="on" />
+  <widget source="label5" render="Label" position="1291,925" size="295,123" font="NotoSans-Bold;30" halign="center" valign="center" zPosition="2" foregroundColor="mediumblue" backgroundColor="back_color" transparent="1" />
+  <widget source="label5s" render="Label" position="1291,925" size="295,123" font="NotoSans-Bold;36" halign="center" valign="center" zPosition="2" foregroundColor="white" backgroundColor="back_color" transparent="1" />
+  <widget name="pixmap5" position="1291,925" size="295,123" zPosition="1" transparent="1" alphatest="on" />
+  <widget source="label6" render="Label" position="1605,925" size="295,123" font="NotoSans-Bold;30" halign="center" valign="center" zPosition="2" foregroundColor="mediumblue" backgroundColor="back_color" transparent="1" />
+  <widget source="label6s" render="Label" position="1605,925" size="295,123" font="NotoSans-Bold;36" halign="center" valign="center" zPosition="2" foregroundColor="white" backgroundColor="back_color" transparent="1" />
+  <widget name="pixmap6" position="1605,925" size="295,123" zPosition="1" transparent="1" alphatest="on" />
+</screen>
+ </skin>
+ 
+

@@ -1,0 +1,7 @@
+<skin>
+<!--skin_Volume_4-->
+<screen name="Volume" position="695,40" size="530,35" title="Volume" flags="wfNoBorder" backgroundColor="transparent" zPosition="4">
+<ePixmap position="0,0" size="530,35" zPosition="0" pixmap="4ATV_speedy_blue/volume/volume_bg4.png" />
+<widget name="Volume" position="3,0" size="524,35" zPosition="6" pixmap="4ATV_speedy_blue/volume/volume4.png" transparent="0" />
+</screen>
+</skin>

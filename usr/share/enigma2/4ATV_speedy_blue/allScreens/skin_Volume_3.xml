@@ -1,0 +1,7 @@
+<skin>
+<!--skin_Volume_3-->
+<screen name="Volume" position="637,30" size="645,60" title="Volume" backgroundColor="transparent" zPosition="4" flags="wfNoBorder">
+<widget name="Volume" pixmap="4ATV_speedy_blue/volume/volume3.png" position="0,0" size="645,60" transparent="0" zPosition="6" />
+<widget render="speedyVolumeText" source="global.CurrentTime" position="0,0" size="60,60" zPosition="7" font="Regular;27" halign="center" valign="center" foregroundColor="white" transparent="0" />
+</screen>
+</skin>

@@ -1,0 +1,6 @@
+<skin>
+<!--skin_Mute_1-->
+<screen name="Mute" position="25,25" size="100,100" title="Mute" flags="wfNoBorder" backgroundColor="black" zPosition="4">
+<ePixmap position="0,0" size="100,100" pixmap="4ATV_speedy_blue/icons/mute2.png" zPosition="5" />
+</screen>
+</skin>

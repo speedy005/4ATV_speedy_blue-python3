@@ -1,0 +1,189 @@
+<skin>
+<!--skin_maininfo-->
+<screen name="menu_information" position="0,0" size="1920,1080" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+    <widget source="Title" render="Label" position="25,30" size="900,50" font="Regular; 40" halign="left" valign="center" foregroundColor="orange" backgroundColor="black" transparent="1" zPosition="1" />
+    <ePixmap pixmap="4ATV_speedy_blue/menu/back3_black.png" position="0,0" zPosition="-20" size="1920,1080" />
+    <widget source="global.CurrentTime" render="Label" position="1060,25" size="750,50" font="Regular; 40" halign="right" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%A,%d.%m.%Y  %H:%M:%S</convert>
+    </widget>
+    <widget source="menu" render="Listbox" position="30,130" size="1160,460" scrollbarMode="showNever" enableWrapAround="1" backgroundColor="black" foregroundColor="white" foregroundColorSelected="orange" foregroundColorMarkedSelected="orange" selectionPixmap="4ATV_speedy_blue/menu/selected_60.png" transparent="1" zPosition="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (15, 5), size = (700, 50), flags = RT_HALIGN_LEFT, text = 0) ],
+				"fonts": [gFont("Regular", 36)],
+				"itemHeight": 50
+				}
+			</convert>
+    </widget>
+    <widget source="menu" render="Pixmap" pixmap="4ATV_speedy_blue/icons/swupdate.png" position="1470,750" size="200,200">
+      <convert type="MenuEntryCompare">supportchannel_YTChannel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" pixmap="4ATV_speedy_blue/icons/info.png" position="1470,750" size="200,200">
+      <convert type="MenuEntryCompare">about_screen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" pixmap="4ATV_speedy_blue/icons/menu_information_device.png" position="1470,750" size="200,200">
+      <convert type="MenuEntryCompare">device_screen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" pixmap="4ATV_speedy_blue/icons/info.png" position="1470,750" size="200,200">
+      <convert type="MenuEntryCompare">service_info_screen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="4ATV_speedy_blue/menu/monibutton.png" size="60,20" position="655,918" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/monibutton.png" size="60,20" position="745,918" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/monibutton.png" size="60,20" position="850,918" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/monibutton.png" size="60,20" position="940,918" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/monibutton.png" size="60,20" position="1030,918" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/monibutton.png" size="60,20" position="1120,917" alphatest="blend" />
+  <widget name="spy1" size="14,14" position="697,923" zPosition="4" pixmap="4ATV_speedy_blue/menu/monibutton_g.png" alphatest="blend" />
+  <widget name="spy2" size="14,14" position="750,922" zPosition="4" pixmap="4ATV_speedy_blue/menu/monibutton_g.png" alphatest="blend" />
+  <widget name="spy3" size="14,14" position="785,921" zPosition="4" pixmap="4ATV_speedy_blue/menu/monibutton_g.png" alphatest="blend" />
+  <widget name="spy4" size="14,14" position="854,921" zPosition="4" pixmap="4ATV_speedy_blue/menu/monibutton_g.png" alphatest="blend" />
+  <widget name="spy5" size="14,14" position="891,921" zPosition="4" pixmap="4ATV_speedy_blue/menu/monibutton_g.png" alphatest="blend" />
+  <widget name="spy6" size="14,14" position="946,922" zPosition="4" pixmap="4ATV_speedy_blue/menu/monibutton_g.png" alphatest="blend" />
+  <widget name="spy7" size="14,14" position="980,921" zPosition="4" pixmap="4ATV_speedy_blue/menu/monibutton_g.png" alphatest="blend" />
+  <widget name="spy8" size="14,14" position="1036,920" zPosition="4" pixmap="4ATV_speedy_blue/menu/monibutton_g.png" alphatest="blend" />
+  <widget name="spy9" size="14,14" position="1071,922" zPosition="4" pixmap="4ATV_speedy_blue/menu/monibutton_g.png" alphatest="blend" />
+  <widget name="spy10" size="14,14" position="1125,921" zPosition="4" pixmap="4ATV_speedy_blue/menu/monibutton_g.png" alphatest="blend" />
+  <widget name="spy11" size="14,14" position="1160,921" zPosition="4" pixmap="4ATV_speedy_blue/menu/monibutton_g.png" alphatest="blend" />
+  <eLabel text="Ssh" position="655,940" zPosition="4" size="60,26" font="Regular;22" halign="center" backgroundColor="black" transparent="1" />
+  <eLabel text="Telnet" position="740,940" zPosition="4" size="80,26" font="Regular;22" halign="center" backgroundColor="black" transparent="1" />
+  <eLabel text="Ftp" position="850,940" zPosition="4" size="60,26" font="Regular;22" halign="center" backgroundColor="black" transparent="1" />
+  <eLabel text="Vpn" position="940,940" zPosition="4" size="60,26" font="Regular;22" halign="center" backgroundColor="black" transparent="1" />
+  <eLabel text="Samba" position="1020,940" zPosition="4" size="80,26" font="Regular;22" halign="center" backgroundColor="black" transparent="1" />
+  <eLabel text="Nfs" position="1120,940" zPosition="4" size="60,26" font="Regular;22" halign="center" backgroundColor="black" transparent="1" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/epg_b.png" position="1259,752" size="35,35" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/epg_b.png" position="1259,794" size="35,35" alphatest="blend" />
+  <ePixmap pixmap="4ATV_speedy_blue/menu/epg_b.png" position="1259,836" size="35,35" alphatest="blend" />
+  <eLabel text="1    Settings" position="1269,756" zPosition="4" size="180,26" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
+  <eLabel text="2    Service Info" position="1269,798" zPosition="4" size="180,26" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
+  <eLabel text="3    About" position="1269,842" zPosition="4" size="180,26" font="Regular;22" halign="left" backgroundColor="black" transparent="1" />
+  <widget name="moni" size="0,0" position="0,0" zPosition="2" backgroundColor="black" />
+  <widget name="monipix" size="0,0" position="0,0" />
+  <widget name="moni2" size="1150,380" position="39,593" font="Regular;20" zPosition="6" backgroundColor="black" />
+  <eLabel name="" position="781,992" size="357,70" text="mod by speedy" font="Regular; 45" foregroundColor="orange" zPosition="1" transparent="1" />
+  <widget alphatest="blend" pixmap="4ATV_speedy_blue/icons/ico_sd_off_576.png" position="140,1010" render="Pixmap" size="98,38" source="session.CurrentService" zPosition="2">
+      <convert type="speedyServiceInfo">VideoWidth</convert>
+      <convert type="ValueRange">0,1279</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="4ATV_speedy_blue/icons/ico_hd_on_720.png" position="140,1010" render="Pixmap" size="98,38" source="session.CurrentService" zPosition="3">
+      <convert type="speedyServiceInfo">VideoHeight</convert>
+      <convert type="ValueRange">720,992</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="4ATV_speedy_blue/icons/ico_hd_on_1080.png" position="142,1010" render="Pixmap" size="98,38" source="session.CurrentService" zPosition="4">
+      <convert type="speedyServiceInfo">VideoHeight</convert>
+      <convert type="ValueRange">1001,1080</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="4ATV_speedy_blue/icons/audio_flags.png" position="410,1010" size="98,35" zPosition="0" alphatest="blend" />
+    <widget alphatest="on" path="/media/usb/audioicon" position="409,1010" render="speedyextAudioIcon" size="98,35" source="session.CurrentService" zPosition="1">
+      <convert type="speedyextaudioinfo">AudioIcon</convert>
+    </widget>
+    <ePixmap pixmap="4ATV_speedy_blue/icons/ico_format_off.png" position="275,1010" size="98,38" zPosition="1" alphatest="blend" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/icons/ico_format_on.png" position="275,1010" size="98,38" zPosition="3" alphatest="blend">
+      <convert type="speedyServiceInfo">IsWidescreen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget font="LCD; 30" halign="center" position="1390,995" render="Label" size="350,65" source="session.CurrentService" transparent="1" zPosition="1" foregroundColor="orange" valign="center">
+      <convert type="speedyBoxInfo">Uptime</convert>
+    </widget>
+    <widget source="session.CurrentService" position="140,1010" size="98,38" render="Pixmap" pixmap="4ATV_speedy_blue/icons/ico_uhd_on.png" zPosition="1" alphatest="blend">
+      <convert type="speedyServiceInfo">VideoHeight</convert>
+      <convert type="ValueRange">1081,5000</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.VideoPicture" render="speedylivetvPig" position="1233,110" size="674,380" zPosition="2" backgroundColor="backgroundPig" />
+    <ePixmap pixmap="4ATV_speedy_blue/menu/line648.png" position="1233,494" size="674,4" alphatest="blend" zPosition="6" />
+    <ePixmap pixmap="4ATV_speedy_blue/menu/line648.png" position="1233,513" size="674,4" alphatest="blend" zPosition="6" />
+    <widget source="session.Event_Now" render="speedyProgress" pixmap="4ATV_speedy_blue/progress/progress665.png" position="1233,502" size="674,7" zPosition="1" transparent="1" borderWidth="1" borderColor="foregroundClock">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <ePixmap pixmap="4ATV_speedy_blue/menu/line648.png" position="1233,724" size="674,4" alphatest="blend" zPosition="6" />
+    <ePixmap alphatest="blend" pixmap="4ATV_speedy_blue/crypticons/ico_lan_off.png" position="37,1010" size="75,38" zPosition="1" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/crypticons/ico_wifi_on.png" position="37,1010" zPosition="3" size="75,38" transparent="1" alphatest="blend">
+      <convert type="speedyRouteInfo">Wifi</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/crypticons/ico_lan_on.png" position="37,1010" zPosition="3" size="75,38" transparent="1" alphatest="blend">
+      <convert type="speedyRouteInfo">Lan</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="4ATV_speedy_blue/crypticons/ico_net1_on.png" position="82,1019" size="20,20" zPosition="5" alphatest="blend">
+      <convert type="speedyTestConnection">
+      </convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="global.CurrentTime" render="Pixmap" pixmap="4ATV_speedy_blue/crypticons/ico_net1_off.png" position="82,1019" size="20,20" alphatest="blend" zPosition="4">
+      <convert type="speedyAlwaysTrue" />
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <ePixmap pixmap="4ATV_speedy_blue/menu/pig_bg.png" position="1232,110" size="678,385" zPosition="0" alphatest="blend" />
+    <widget source="session.Event_Now" render="speedyAXBlueRunningText" options="movetype=running,direction=top,startpoint=0,startdelay=2500,wrap=1,always=1,repeat=5,oneshot=1" position="1233,524" size="674,195" font="Regular;34" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="2">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <ePixmap pixmap="4ATV_speedy_blue/menu/runningtext_bg.png" position="1231,521" size="676,200" alphatest="blend" zPosition="1" />
+    <ePixmap pixmap="4ATV_speedy_blue/buttons/key_exit.png" position="1820,1010" size="60,31" zPosition="10" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="4ATV_speedy_blue/icons/ico_sd_off_576.png" position="142,1010" size="98,38" zPosition="0" alphatest="blend" />
+<ePixmap position="30,580" size="1160,400" pixmap="4ATV_speedy_blue/menu/Info_back.png" zPosition="-1" alphatest="blend" transparent="1" />
+<ePixmap position="30,130" size="1160,460" zPosition="-1" pixmap="4ATV_speedy_blue/menu/background_460.png" transparent="0" />
+<widget source="session.FrontendStatus" render="speedyProgress" position="924,836" size="81,24" zPosition="3" pixmap="4ATV_speedy_blue/icons/bar_snr_2.png" transparent="1" backgroundColor="AX_Background">
+      <convert type="speedyFrontendInfo">SNR</convert>
+    </widget>
+<widget source="session.FrontendStatus" render="Label" position="921,834" size="87,28" backgroundColor="snr" transparent="1" halign="center" font="Regular; 22" valign="center" zPosition="3" foregroundColor="white">
+      <convert type="speedyFrontendInfo">SNR</convert>
+    </widget>
+<ePixmap pixmap="4ATV_speedy_blue/menu/bg_snr.png" position="860,823" size="155,50" zPosition="1" alphatest="blend" />
+<widget source="session.FrontendStatus" render="speedyProgress" position="1084,835" size="81,24" zPosition="2" pixmap="4ATV_speedy_blue/icons/bar_snr_2_2.png" transparent="1">
+      <convert type="speedyFrontendInfo">AGC</convert>
+    </widget>
+<widget source="session.FrontendStatus" render="Label" position="1082,833" size="87,28" backgroundColor="red" transparent="1" halign="center" font="Regular; 22" valign="center" zPosition="3" foregroundColor="white">
+      <convert type="speedyFrontendInfo">AGC</convert>
+    </widget>
+<ePixmap pixmap="4ATV_speedy_blue/menu/bg_agc.png" position="1020,823" size="155,50" zPosition="1" alphatest="blend" />
+<widget source="session.CurrentService" render="speedyPicEmu2" position="868,603" size="150,95" transparent="0" alphatest="blend" zPosition="4" />
+<widget source="session.CurrentService" render="speedyPiconProv" path="piconProv" position="1025,709" size="150,95" zPosition="4" transparent="0" alphatest="on">
+    <convert type="speedyServiceName">Provider</convert>
+  </widget>
+<widget source="session.CurrentService" render="speedyPicCript2" path="cript" position="867,709" size="150,95" alphatest="on" zPosition="5" />
+<widget source="session.CurrentService" render="speedyPiconSatTV" position="1025,603" size="150,95" zPosition="1" transparent="0" alphatest="on" />
+<widget source="session.CurrentService" render="Label" position="551,1007" size="118,45" font="HandelGotDBol; 30" halign="center" backgroundColor="black" transparent="1" valign="center" foregroundColor="unf47d19" zPosition="4">
+      <convert type="speedyNServiceInfo">VideoHeightIP  </convert>
+    </widget>
+<widget source="menu" render="Pixmap" pixmap="4ATV_speedy_blue/icons/weather_msn.png" position="1470,750" size="200,200" transparent="0" zPosition="0">
+      <convert type="MenuEntryCompare">Weather_MSN</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+<ePixmap pixmap="4ATV_speedy_blue/menu/meter_1.png" position="49,598" size="130,130" alphatest="blend" zPosition="4" transparent="0" />
+<widget name="ramg" position="62,610" size="100,100" zPosition="5" borderColor="red" transparent="1" />
+<eLabel text="Ram" position="48,734" zPosition="1" size="130,26" font="Regular;22" halign="center" backgroundColor="blac" transparent="1" />
+<widget name="swapg" position="209,610" size="100,100" zPosition="5" borderColor="red" transparent="1" />
+<ePixmap pixmap="4ATV_speedy_blue/menu/meter_1.png" position="195,598" size="130,130" alphatest="blend" zPosition="4" transparent="0" />
+<eLabel text="Swap" position="196,731" zPosition="1" size="130,26" font="Regular;22" halign="center" backgroundColor="black" transparent="1" />
+<ePixmap pixmap="4ATV_speedy_blue/menu/meter_1.png" position="344,598" size="130,130" alphatest="blend" zPosition="4" transparent="0" />
+<widget name="memtg" position="359,611" size="100,100" zPosition="5" borderColor="red" transparent="1" />
+<eLabel text="Total Mem" position="334,731" zPosition="1" size="150,26" font="Regular;22" halign="center" backgroundColor="black" transparent="1" />
+<ePixmap pixmap="4ATV_speedy_blue/menu/meter_2.png" position="491,598" size="130,130" alphatest="blend" zPosition="4" />
+<widget name="hddtempg" position="508,610" size="100,100" zPosition="5" borderColor="red" transparent="1" />
+<eLabel text="HDD Temp" position="494,731" zPosition="1" size="130,26" font="Regular;22" halign="center" backgroundColor="black" transparent="1" />
+<ePixmap pixmap="4ATV_speedy_blue/menu/meter_1.png" position="641,598" size="130,130" alphatest="blend" zPosition="4" />
+<widget name="flashg" position="657,610" size="100,100" zPosition="5" borderColor="red" transparent="1" />
+<eLabel text="Flash" position="645,731" zPosition="1" size="130,26" font="Regular;22" halign="center" backgroundColor="black" transparent="5" />
+<ePixmap pixmap="4ATV_speedy_blue/menu/meter_1.png" position="45,778" size="130,130" alphatest="blend" zPosition="4" />
+<ePixmap pixmap="4ATV_speedy_blue/menu/meter_1.png" position="195,779" size="130,130" alphatest="blend" zPosition="4" />
+<ePixmap pixmap="4ATV_speedy_blue/menu/meter_1.png" position="343,779" size="130,130" alphatest="blend" zPosition="4" />
+<ePixmap pixmap="4ATV_speedy_blue/menu/meter_1.png" position="494,778" size="130,130" alphatest="blend" zPosition="4" />
+<widget name="spacetg" position="59,790" size="100,100" zPosition="5" borderColor="red" transparent="1" />
+<eLabel text="Total Space" position="44,920" zPosition="1" size="135,26" font="Regular;22" halign="center" backgroundColor="black" transparent="1" />
+<widget name="cffg" position="208,790" size="100,100" zPosition="5" borderColor="red" transparent="1" />
+<eLabel text="CF" position="193,920" zPosition="1" size="130,26" font="Regular;22" halign="center" backgroundColor="black" transparent="1" />
+<widget name="usbg" position="358,792" size="100,100" zPosition="5" borderColor="red" transparent="1" />
+<eLabel text="USB" position="347,919" zPosition="1" size="130,26" font="Regular;22" halign="center" backgroundColor="black" transparent="1" />
+<widget name="hddg" position="509,790" size="100,100" zPosition="5" borderColor="red" transparent="1" />
+<eLabel text="HDD Space" position="496,920" zPosition="1" size="130,26" font="Regular;22" halign="center" backgroundColor="black" transparent="1" />
+<ePixmap pixmap="4ATV_speedy_blue/menu/moni.png" position="631,762" size="210,150" alphatest="blend" zPosition="1" />
+<widget name="smallmon" position="635,767" size="200,140" zPosition="2" font="Regular;17" halign="center" />
+</screen>
+  </skin>
